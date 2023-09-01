@@ -81,7 +81,7 @@ function DataUser() {
     <Container>
       <Form className="mt-5" onSubmit={handleSearch}>
         <Row>
-          <Col md={10}>
+          <Col>
             <Form.Group className="mb-3" controlId="formGroupSearch">
               <Form.Control
                 type="text"
@@ -90,11 +90,6 @@ function DataUser() {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </Form.Group>
-          </Col>
-          <Col>
-            <Button className="w-100" variant="primary" type="submit">
-              Search
-            </Button>
           </Col>
         </Row>
       </Form>
